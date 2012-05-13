@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+      body {
+        font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+        font-size: 12px;
+      };
+    </style>
+  </head>
+<body>
+  <h1>En test med event data fra glimt</h1>
+
+  <div id="main" style="border: none;width: 300px;height:80px;overflow-y: auto;">
+    Innholdet i boksen under er hentet fra glimt.com. Resten av innholdet er statisk.
+  </div>
+  <br/>
+
+
+  <script type="text/javascript">
+  GLIMT = {
+    keywords: "Litteraturhuset",
+    language: "no",
+    width: "300px",
+  }
+  </script>
+  <script src="glimt-event-widget.js" type="text/javascript"></script>
+  <div id="glimt-event-widget"></div>
+
+
+
+  <h3>Inkluder denne widgeten på siden din</h3>
+  <p>Lim koden under inn i html koden på siden din.</p>
+
+  <form>
+    <textarea rows="15" cols="90">
+<script type="text/javascript">
+  GLIMT = {
+    keywords: "Litteraturhuset",
+    language: "no",
+    width: "300px"
+  }
+  </script>
+  <script src="http://folk.uio.no/thomasfl/glimt/glimt-event-widget.js" type="text/javascript"></script>
+  <div id="glimt-event-widget"></div>
+    </textarea>
+  </form>
+
+</body>
+</html>
